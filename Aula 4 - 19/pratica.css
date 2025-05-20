@@ -1,0 +1,103 @@
+/* RESET GERAL: remove margens e espaçamentos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO DO CORPO DA PÁGINA */
+body {
+    font-family: Arial, sans-serif;        /* Fonte dos textos */
+    background-color: #f5f8ff;             /* Cor de fundo da página */
+    color: #333;                           /* Cor do texto padrão */
+    line-height: 1.6;                      /* Altura entre linhas */
+    padding: 30px;                         /* Espaço interno nas bordas da página */
+}
+
+/* CABEÇALHO GERAL */
+.cabecalho {
+    text-align: center;       /* Centraliza texto e elementos */
+    position: relative;       /* Necessário para posicionar a imagem de perfil */
+    margin-bottom: 50px;      /* Espaço abaixo do cabeçalho */
+}
+
+/* IMAGEM DE CAPA (BANNER) */
+.capa {
+    background-image: url("img/capa.jfif");   /* Caminho da imagem de fundo */
+    background-size: cover;                   /* Faz a imagem preencher toda a área */
+    background-position: center;              /* Centraliza a imagem dentro da div */
+    height: 200px;                            /* Altura da imagem de capa */
+    border-radius: 10px 10px 0 0;             /* Arredonda só os cantos de cima */
+}
+
+/* IMAGEM DE PERFIL REDONDA */
+.foto-perfil {
+    width: 130px;                   /* Largura da imagem */
+    height: 130px;                  /* Altura da imagem */
+    object-fit: cover;              /* Corta a imagem pra caber certinho */
+    border-radius: 50%;            /* Deixa a imagem redonda */
+    border: 4px solid white;       /* Borda branca ao redor da imagem */
+    position: absolute;            /* Permite que fique "flutuando" sobre a capa */
+    top: 130px;                    /* Distância do topo da caixa pai */
+    left: 50%;                     /* Coloca a imagem no centro horizontal */
+    transform: translateX(-50%);   /* Ajusta o centro exato */
+    background-color: white;       /* Fundo branco caso a imagem não ocupe tudo */
+}
+
+/* TÍTULO ABAIXO DA FOTO DE PERFIL */
+.cabecalho h1 {
+    margin-top: 60px;   /* Espaço acima do título (entre foto e texto) */
+    font-size: 25px;    /* Tamanho da fonte do título */
+    color: #333;        /* Cor do texto */
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    max-width: 1000px;  /* Largura máxima do conteúdo */
+    margin: auto;       /* Centraliza o conteúdo na página */
+}
+
+/* CAIXAS DE TEXTO (como "sobre mim", "formação") */
+article, section {
+    background-color: white;                       /* Fundo branco nas caixas */
+    padding: 20px;                                 /* Espaço interno */
+    border-radius: 10px;                           /* Cantos arredondados */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);         /* Sombra suave ao redor */
+    margin-bottom: 20px;                           /* Espaço entre as seções */
+}
+
+/* TÍTULOS DAS SEÇÕES */
+h2 {
+    color: #db1616;            /* Cor vermelha para os títulos */
+    margin-bottom: 10px;       /* Espaço abaixo do título */
+}
+
+/* LISTAS COM MARCADORES */
+ul {
+    padding-left: 30px;        /* Afasta os itens da borda esquerda */
+}
+
+ul li {
+    margin-bottom: 8px;        /* Espaço entre os itens da lista */
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #db1616; /* Fundo vermelho */
+    color: white;              /* Texto branco */
+    text-align: center;        /* Centraliza o conteúdo */
+    padding: 6px;              /* Espaço interno */
+    border-radius: 10px;       /* Cantos arredondados */
+    margin-top: 40px;          /* Espaço acima do rodapé */
+}
+
+/* LINKS EM GERAL */
+a {
+    color: #aad4ff;           /* Cor azul clara para links */
+    text-decoration: none;    /* Remove o sublinhado dos links */
+}
+
+/* EFEITO QUANDO PASSA O MOUSE NO LINK */
+a:hover {
+    text-decoration: underline;  /* Adiciona sublinhado ao passar o mouse */
+}
